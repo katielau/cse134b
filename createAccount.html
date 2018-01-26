@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Create Account</title>
+    <style>
+        header {
+            background-color: lightblue;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+            header ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            header li {
+                float: left;
+                padding-left: 3vw;
+                padding-right: 3vw;
+            }
+
+        nav {
+            float: left;
+            background-color: thistle;
+            padding-top: 5px;
+            padding-bottom: 100%;
+            padding-left: 3vw;
+            padding-right: 3vw;
+        }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            nav li {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+        feat {
+            float: left;
+            padding-left: 10 px;
+        }
+
+            feat h1 {
+                margin-bottom: 0em;
+            }
+
+            feat ul {
+                list-style-type: none;
+            }
+            feat li {
+                padding-bottom: 3px;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="home.html">ARTC</a></li>
+            <li>
+                <input type="text" name="search" value="" />
+                <a href="artworkResults.html"><input type="submit" value="Search Artwork" /></a>
+            </li>
+            <li><a href="#FAQ">FAQ</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+    </header>
+    <nav>
+        <ul>
+            <li>Type of Art</li>
+            <li>
+                <form action="/action_page.php">
+                    <select name="type of art">
+                        <option value="Select one">Select one</option>
+                        <option value="Anime">Anime</option>
+                        <option value="Animals">Animals</option>
+                    </select>
+                </form>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li>Price</li>
+            <li>
+                <form action="/action_page.php">
+                    <select name="price">
+                        <option value="Select one">Select one</option>
+                        <option value="$">$</option>
+                        <option value="$$">$$</option>
+                        <option value="$$$">$$$</option>
+                    </select>
+                </form>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li>Time</li>
+            <li>
+                <form action="/action_page.php">
+                    <select name="time">
+                        <option value="Select one">Select one</option>
+                        <option value="10">10 days</option>
+                        <option value="20">20 days</option>
+                        <option value="20">30 days</option>
+                        <option value="20">30+ days</option>
+                    </select>
+                </form>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li>
+                <a href="artistResults.html"><input type="submit" value="Search Artists" /></a>
+            </li>
+        </ul>
+    </nav>
+
+    <feat>
+        <h1>Create Account</h1>
+        <ul>
+            <li>Username</li>
+            <li>
+                <form action="/action_page.php" method="get">
+                    <input type="text" name="username" value="" /><br />
+                </form>
+            </li>
+            <li></li>
+            <li>Password</li>
+            <li>
+                <form action="/action_page.php" method="get">
+                    <input type="text" name="password" value="" />
+                </form>
+            </li>
+            <li></li>
+            <li>Confirm Password</li>
+            <li>
+                <form action="/action_page.php" method="get">
+                    <input type="text" name="password2" value="" />
+                </form>
+            </li>
+            <li></li>
+            <li>E-mail</li>
+            <li>
+                <form action="/action_page.php" method="get">
+                    <input type="text" name="email" value="" />
+                </form>
+            </li>
+            <li></li>
+            <li>
+                <form action="/action_page.php">
+                    <input type="checkbox" name="artist" value="artist">I am an artist
+                </form>
+            </li>
+            <li></li>
+            <li>
+                <a href="home.html"><input type="submit" value="Login" /></a>
+            </li>
+        </ul>
+    </feat>
+</body>
+</html>
