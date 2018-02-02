@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Artwork Results</title>
+    <style>
+        figure {
+            float: left;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+        }
+
+            figure img {
+                width: 200px;
+                height: 200px;
+            }
+
+        nav {
+            float: left;
+            padding-top: 5px;
+            padding-bottom: 100%;
+            padding-left: 3vw;
+            padding-right: 3vw;
+        }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            nav li {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+    </style>
+    <meta name="description" content="Artwork Results">
+    <meta name="keywords" content="Artwork Results">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="main">
+        <div class="page">
+            <div class="header">
+                <h1>ARTC</h1>
+            </div>
+            <div class="topmenu">
+                <ul>
+                    <li style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; padding-left: 0px;"><a href="home.html">ARTC</a></li>
+                    <li><input type="text" name="search" value="" /><a href="artworkResults.html"><input type="submit" value="Search Artwork" /></a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="right-panel">
+                    <h2 class="title">Artwork Results</h2>
+                    <figure>
+                        <a href=""><img src="https://www.anime-planet.com/images/anime/covers/my-hero-academia-2-7966.jpg?t=1492390186" /></a>
+                        <figcaption><a href="artist1.html">Artist1</a></figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href=""><img src="https://cdn.vox-cdn.com/thumbor/hJq_hq_GDsldfqsPJJIw8xJX-rA=/0x354:1064x1166/1200x800/filters:focal(376x510:546x680)/cdn.vox-cdn.com/uploads/chorus_image/image/56956201/2x3__25_.0.png" /></a>
+                        <figcaption><a href="artist2.html">Artist2</a></figcaption>
+                    </figure>
+                    <figure>
+                        <a href=""><img src="https://www.anime-planet.com/images/anime/covers/code-geass-lelouch-of-the-rebellion-r2-1865.jpg?t=1475637995" /></a>
+                        <figcaption><a href="artist3.html">Artist3</a></figcaption>
+                    </figure>
+                </div>
+                <div class="left-panel">
+                    <div class="left-row1">
+                        <h3 class="subtitle"><br />Search Artists</h3>
+                        <nav>
+                            <ul>
+                                <li>Type of Art</li>
+                                <li>
+                                    <form action="/action_page.php">
+                                        <select name="type of art">
+                                            <option value="Select one">Select one</option>
+                                            <option value="Anime">Anime</option>
+                                            <option value="Animals">Animals</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li>Price</li>
+                                <li>
+                                    <form action="/action_page.php">
+                                        <select name="price">
+                                            <option value="Select one">Select one</option>
+                                            <option value="$">$</option>
+                                            <option value="$$">$$</option>
+                                            <option value="$$$">$$$</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li>Time</li>
+                                <li>
+                                    <form action="/action_page.php">
+                                        <select name="time">
+                                            <option value="Select one">Select one</option>
+                                            <option value="10">10 days</option>
+                                            <option value="20">20 days</option>
+                                            <option value="20">30 days</option>
+                                            <option value="20">30+ days</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li>
+                                    <a href="artistResults.html"><input type="submit" value="Search Artists" /></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

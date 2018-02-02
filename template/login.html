@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ARTC</title>
+    <style>
+        feat ul {
+            list-style-type: none;
+        }
+
+        feat li {
+            padding-bottom: 3px;
+        }
+
+        nav {
+            float: left;
+            padding-top: 5px;
+            padding-bottom: 100%;
+            padding-left: 3vw;
+            padding-right: 3vw;
+        }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            nav li {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+    </style>
+    <meta name="description" content="ARTC">
+    <meta name="keywords" content="ARTC">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="main">
+        <div class="page">
+            <div class="header">
+                <h1>ARTC</h1>
+            </div>
+            <div class="topmenu">
+                <ul>
+                    <li style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; padding-left: 0px;"><a href="home.html">ARTC</a></li>
+                    <li><input type="text" name="search" value="" /><a href="artworkResults.html"><input type="submit" value="Search Artwork" /></a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="right-panel">
+                    <h2 class="title">Login</h2>
+                    <feat>
+                        <ul>
+                            <li><br />Username</li>
+                            <li>
+                                <form action="/action_page.php" method="get">
+                                    <input type="text" name="username" value="" />
+                                </form>
+                            </li>
+                            <li></li>
+                            <li>Password</li>
+                            <li>
+                                <form action="/action_page.php" method="get">
+                                    <input type="text" name="password" value="" />
+                                </form>
+                            </li>
+                            <li></li>
+                            <li>
+                                <a href="home.html"><input type="submit" value="Login" /></a>
+
+                            </li>
+                            <li><a href="createAccount.html">Create Account</a></li>
+                        </ul>
+                    </feat>
+                </div>
+                <div class="left-panel">
+                    <div class="left-row1">
+                        <h3 class="subtitle"><br />Search Artists</h3>
+                        <nav>
+                            <ul>
+                                <li>Type of Art</li>
+                                <li>
+                                    <form action="/action_page.php">
+                                        <select name="type of art">
+                                            <option value="Select one">Select one</option>
+                                            <option value="Anime">Anime</option>
+                                            <option value="Animals">Animals</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li>Price</li>
+                                <li>
+                                    <form action="/action_page.php">
+                                        <select name="price">
+                                            <option value="Select one">Select one</option>
+                                            <option value="$">$</option>
+                                            <option value="$$">$$</option>
+                                            <option value="$$$">$$$</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li>Time</li>
+                                <li>
+                                    <form action="/action_page.php">
+                                        <select name="time">
+                                            <option value="Select one">Select one</option>
+                                            <option value="10">10 days</option>
+                                            <option value="20">20 days</option>
+                                            <option value="20">30 days</option>
+                                            <option value="20">30+ days</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li>
+                                    <a href="artistResults.html"><input type="submit" value="Search Artists" /></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -82,15 +82,15 @@ a:hover {
 	float: left;
 	padding-bottom: 13px;
 }
-.left-panel {
+.right-panel {
 	width: 623px;
-	float: left;
+	float: right;
 	padding-top: 20px;
-	padding-left: 33px;
+	padding-right: 33px;
 }
-.left-panel-in {
+.right-panel-in {
 	width: 623px;
-	float: left;
+	float: right;
 }
 .title {
 	font-size: 24px;
@@ -115,14 +115,14 @@ ul.list1 li {
 	line-height: 100%;
 	color: #000000;
 }
-.right-panel {
+.left-panel {
 	background-color: #ebebeb;
 	width: 236px;
-	float: right;
+	float: left
 	padding-top: 20px;
+	padding-bottom: 100%
 }
-.right-row1 {
-	clear: both;
+.left-row1 {
 	padding-left: 14px;
 }
 .green {
@@ -131,13 +131,13 @@ ul.list1 li {
 	color: #003300;
 	margin-bottom: 5px;
 }
-.right-row2 {
+.left-row2 {
 	font-weight: bold;
 	line-height: 150%;
 	background-color: #d8d7d7;
 	clear: both;
 	padding-top: 29px;
-	padding-left: 19px;
+	padding-right: 19px;
 	padding-bottom: 57px;
 }
 .footer {
