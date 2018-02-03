@@ -2,10 +2,16 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Title goes here</title>
+  <title>ARTC | Works Under Animal Tag</title>
   <meta name="description" content="Description of your site goes here">
   <meta name="keywords" content="keyword1, keyword2, keyword3">
   <link href="css/style2.css" rel="stylesheet" type="text/css">
+  <style>
+	.center {
+		margin: auto;
+		padding: 10px;
+	}
+  </style>
 </head>
 <body>
 <div class="main">
@@ -13,22 +19,21 @@
 <div class="header">
 <h1>ARTC</h1>
 </div>
-<div class="topmenu">
-<ul>
-  <li style="background: transparent none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; padding-left: 0px;"><a href="home.html">ARTC</a></li>
-  <li><input type="text" name="search" value="" /><a href="artworkResults.html"><input type="submit" value="Search Artwork" /></a></li>
-  <li><a href="faq.html">FAQ</a></li>
-  <li><a href="login.html">Login</a></li>
-</ul>
+<div class="topnav" id="myTopnav">
+            <a href="home.html" class="active">Home</a>
+            <a href="faq.html">FAQ</a>
+            <a href="login.html">Login</a>
+
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 <div class="content">
 <div class="left-panel">
 <div class="left-panel-in">
 <br>
 <br>
-<h1>CatLover99's Works under the 'Animal' tag<h1>
+<h1>CatLover99's Works under the 'Animal' tag</h1>
 <br>
-<center>
+<div class="center">
 <p>
 
 <a href="cat1.html">
@@ -44,7 +49,7 @@
 <form action="artist.html" method="get">
 	<input type="submit" value="Back to CatLover99's main page" /> 
 </form>
-</center>
+</div>
 </div>
 </div>
 
@@ -61,7 +66,6 @@
   <li><a href="#">Sketch</a></li>
   <li><a href="#">Landscapes</a></li>
 </ul>
-</p>
 <p>&nbsp;</p>
 <p class="blue"><img src="images/right-bullet.jpg" alt="" height="8" width="17"><b>Commissions Completed:6</b></p>
 <p>&nbsp;</p>
@@ -128,7 +132,6 @@
 <p>Phone: 858-000-0000
 </p>
 <br>
-</p>
 	<form action="messaging.html" method="get">
 		<input type="submit" value="Start a chat with me!" />
 	</form>
@@ -139,5 +142,16 @@
 
 </div>
 </div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </body></html>
 
