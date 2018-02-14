@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ARTC</title>
+    <style>
+        figure {
+            float: left;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+        }
+
+             img {
+                width: 200px;
+                height: 200px;
+            }
+        msg {
+            padding:1px;
+        }
+        msg2 {
+            padding:1px;
+        }
+        msg ul {
+            list-style-type: none;
+            padding-bottom: 15px;
+            background-color: lavender;
+            box-shadow: 0 1px 0 black;
+        }
+        msg2 ul {
+            list-style-type: none;
+            padding-bottom: 15px;
+            background-color: aliceblue;
+            box-shadow: 0 1px 0 black;
+        }
+        
+
+        h3 {
+            color:blue;
+        }
+
+        nav {
+            float: left;
+            padding-top: 5px;
+            padding-bottom: 100%;
+            padding-left: 3vw;
+            padding-right: 3vw;
+        }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            nav li {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+        ul {
+            list-style-type: none;
+            box-shadow: 0 1px 0 black;
+        }
+         input {
+            width:100%;
+            height:3em;
+        }
+    </style>
+    <meta name="description" content="ARTC">
+    <meta name="keywords" content="ARTC">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="messagingLoad()">
+    <div class="main">
+        <div class="page">
+            <div class="header">
+                <h1>ARTC</h1>
+            </div>
+            <div class="topnav" id="myTopnav">
+                <a href="home.html" class="active">Home</a>
+                <a href="faq.html">FAQ</a>
+                <p><a id="login" href="login.html">Login</a></p>
+                <p><a id="logout" onclick="logout()" href="home.html"></a></p>
+
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            <div class="content">
+                <div class="right-panel">
+                    <div class="right-row1">
+                        <h2 class="title">Messages</h2>
+                        <br />
+                        <!--
+                            <h3>Artist</h3>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br /></li>
+                            </ul>
+                            <h3>Buyer</h3>
+                            <ul>
+                                <li>
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                </li>
+                            </ul>
+
+                            <h3>Artist</h3>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br /><img src="https://www.anime-planet.com/images/anime/covers/my-hero-academia-2-7966.jpg?t=1492390186" alt="sketch" /><br /></li>
+                            </ul>
+
+                            <h3>Buyer</h3>
+                            <ul>
+                                <li>
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                </li>
+                                <li id="test">testing</li>
+                            </ul>
+    -->
+                        <ul>
+                            <li id="msgs"></li>
+                        </ul>
+
+                        <input id="msgText" type="text" value="" />
+                        <form style="display: inline" action="#" method="get">
+                            <button type="button" onclick="msg()">Send</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="left-panel">
+                    <div class="left-row1">
+                        <nav>
+                            <ul>
+                                <li><br /><h3>Timeframe = 10 days</h3></li>
+                                <li id="test"><br /><h3>Progress</h3></li>
+                                <li id="1">
+                                    Buyer sent $<br />
+                                    <form style="display: inline" action="#" method="get">
+                                        <button id="1b" type="button" onclick="done(1)">Cross off</button>
+                                    </form>
+                                <li />
+                                <li id="2">
+                                    Artist sent sketch<br />
+                                    <form style="display: inline" action="#" method="get">
+                                        <button id="2b" type="button" onclick="done(2)">Cross off</button>
+                                    </form>
+                                <li />
+                                <li id="3">
+                                    Sketch approved<br />
+                                    <form style="display: inline" action="#" method="get">
+                                        <button id="3b" type="button" onclick="done(3)">Cross off</button>
+                                    </form>
+                                <li />
+                                <li id="4">
+                                    Buyer sent $<br />
+                                    <form style="display: inline" action="#" method="get">
+                                        <button id="4b" type="button" onclick="done(4)">Cross off</button>
+                                    </form>
+                                <li />
+                                <li id="5">
+                                    Artist sent final<br />
+                                    <form style="display: inline" action="#" method="get">
+                                        <button id="5b" type="button" onclick="done(5)">Cross off</button>
+                                    </form>
+                                <li />
+                                <li id="6">
+                                    Artist complete<br />
+                                    <form style="display: inline" action="#" method="get">
+                                        <button id="6b" type="button" onclick="done(6)">Cross off</button>
+                                    </form>
+                                <li />
+                                <li id="7">
+                                    Buyer complete<br />
+                                    <form style="display: inline" action="#" method="get">
+                                        <button id="7b" type="button" onclick="done(7)">Cross off</button>
+                                    </form>
+                                <li />
+                                
+                                <li></li>
+                                <li id="sentMoney"></li>
+                                <li>
+                                    <input id="money" type="text" value="" />
+                                    <form style="display: inline" action="#" method="get">
+                                        <button type="button" onclick="money()">Send money</button>
+                                    </form>
+                                </li>
+                                <li></li>
+                                <li>
+                                    <input type="submit" value="Image upload" />
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>

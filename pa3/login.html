@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ARTC</title>
+    <style>
+         ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            padding-bottom: 5px;
+        }
+
+        nav {
+            float: left;
+            padding-top: 5px;
+            padding-bottom: 100%;
+            padding-left: 3vw;
+            padding-right: 3vw;
+        }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            nav li {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+    </style>
+    <meta name="description" content="ARTC">
+    <meta name="keywords" content="ARTC">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="checkLogin()">
+    <div class="main">
+        <div class="page">
+            <div class="header">
+                <h1>ARTC</h1>
+            </div>
+            <div class="topnav" id="myTopnav">
+                <a href="home.html" class="active">Home</a>
+                <a href="faq.html">FAQ</a>
+                <p><a id="login" href="login.html">Login</a></p>
+                <p><a id="msgTab" href="messaging.html"></a></p>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            <div class="content">
+                <div class="right-panel">
+                    <h2 class="title">Login</h2>
+                    
+                        <ul>
+                            <li><br />Username</li>
+                            <li>
+                                <form action="/action_page.php" method="get">
+                                    <input id ="username" type="text" name="username" value="" />
+                                </form>
+                            </li>
+                            <li></li>
+                            <li>Password</li>
+                            <li>
+                                <form action="/action_page.php" method="get">
+                                    <input id ="password" type="text" name="password" value="" />
+                                </form>
+                            </li>
+                            <li></li>
+                            <li>
+                                <form style="display: inline" action="home.html" method="get">
+                                    <button type="button" onclick="loggedIn()">Login</button>
+                                </form>
+
+                            </li>
+                            <li>
+                                <form style="display: inline" action="createAccount.html" method="get">
+                                    <button>Create Account</button>
+                                </form>
+                            </li>
+                        </ul>
+                    
+                </div>
+                <div class="left-panel">
+                    <div class="left-row1">
+                        <h3 class="subtitle"><br />Search Artwork<br /></h3>
+                        <input type="text" name="search" value="" />
+                        <form style="display: inline" action="artworkResults.html" method="get">
+                            <button>Search Artwork</button>
+                        </form>
+                        <h3 class="subtitle"><br />Search Artists</h3>
+                        <nav>
+                            <ul>
+                                <li>Type of Art</li>
+                                <li>
+                                    <form action="/action_page.php">
+                                        <select name="type of art">
+                                            <option value="Select one">Select one</option>
+                                            <option value="Anime">Anime</option>
+                                            <option value="Animals">Animals</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li>Price</li>
+                                <li>
+                                    <form action="/action_page.php">
+                                        <select name="price">
+                                            <option value="Select one">Select one</option>
+                                            <option value="$">$</option>
+                                            <option value="$$">$$</option>
+                                            <option value="$$$">$$$</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li>Time</li>
+                                <li>
+                                    <form action="/action_page.php">
+                                        <select name="time">
+                                            <option value="Select one">Select one</option>
+                                            <option value="10">10 days</option>
+                                            <option value="20">20 days</option>
+                                            <option value="20">30 days</option>
+                                            <option value="20">30+ days</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li>
+                                    <form style="display: inline" action="artistResults.html" method="get">
+                                        <button>Search Artists</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+
+
+    </script>
+</body>
+</html>
