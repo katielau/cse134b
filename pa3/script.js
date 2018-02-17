@@ -68,13 +68,13 @@ function logout() {
 function msg() {
     if (localStorage.getItem("msgString") == null) {
         if (localStorage.getItem("logged") == 1) {
-            msgString = "ARTIST1 <br \>" + document.getElementById("msgText").value + "<br \>";
+            msgString = "<h3>CATLOVER99<h3/>" + document.getElementById("msgText").value + "<br \>";
             localStorage.setItem("msgString", msgString);
             document.getElementById("msgs").innerHTML = localStorage.getItem("msgString");
             document.getElementById("msgText").value = "";
         }
         else if (localStorage.getItem("logged") == 2) {
-            msgString = "BUYER <br \>" + document.getElementById("msgText").value + "<br \>";
+            msgString = "<h3>BUYER </h3>" + document.getElementById("msgText").value + "<br \>";
             localStorage.setItem("msgString", msgString);
             document.getElementById("msgs").innerHTML = localStorage.getItem("msgString");
             document.getElementById("msgText").value = "";
@@ -82,13 +82,13 @@ function msg() {
     }
     else {
         if (localStorage.getItem("logged") == 1) {
-            msgString = localStorage.getItem("msgString") + "ARTIST1 <br \>" + document.getElementById("msgText").value + "<br \>";
+            msgString = localStorage.getItem("msgString") + "<h3>CATLOVER99</h3>" + document.getElementById("msgText").value + "<br \>";
             localStorage.setItem("msgString", msgString);
             document.getElementById("msgs").innerHTML = localStorage.getItem("msgString");
             document.getElementById("msgText").value = "";
         }
         else if (localStorage.getItem("logged") == 2) {
-            msgString = localStorage.getItem("msgString") + "BUYER <br \>" + document.getElementById("msgText").value + "<br \>";
+            msgString = localStorage.getItem("msgString") + "<h3>BUYER</h3>" + document.getElementById("msgText").value + "<br \>";
             localStorage.setItem("msgString", msgString);
             document.getElementById("msgs").innerHTML = localStorage.getItem("msgString");
             document.getElementById("msgText").value = "";
