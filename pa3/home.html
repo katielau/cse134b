@@ -58,16 +58,16 @@
                 <div class="right-panel">
                     <h2 class="title">Featured Artwork</h2>
                     <figure>
-                        <a href=""><img src="https://www.anime-planet.com/images/anime/covers/my-hero-academia-2-7966.jpg?t=1492390186" /></a>
+                        <a href=""><img src="artworks/1.jpg" /></a>
                         <figcaption><a href="artist1.html">Artist1</a></figcaption>
                     </figure>
 
                     <figure>
-                        <a href=""><img src="https://cdn.vox-cdn.com/thumbor/hJq_hq_GDsldfqsPJJIw8xJX-rA=/0x354:1064x1166/1200x800/filters:focal(376x510:546x680)/cdn.vox-cdn.com/uploads/chorus_image/image/56956201/2x3__25_.0.png" /></a>
+                        <a href=""><img src="artworks/6.jpg" /></a>
                         <figcaption><a href="artist2.html">Artist2</a></figcaption>
                     </figure>
                     <figure>
-                        <a href=""><img src="https://www.anime-planet.com/images/anime/covers/code-geass-lelouch-of-the-rebellion-r2-1865.jpg?t=1475637995" /></a>
+                        <a href=""><img src="artworks/3.jpg" /></a>
                         <figcaption><a href="artist3.html">Artist3</a></figcaption>
                     </figure>
                     <figure>
@@ -80,9 +80,9 @@
                 <div class="left-panel">
                     <div class="left-row1">
                         <h3 class="subtitle"><br />Search Artwork<br /></h3>
-                        <input type="text" name="search" value="" />
+                        <input id="artworkSearch" type="text" name="search" value="" />
                         <form style="display: inline" action="artworkResults.html" method="get">
-                            <button>Search Artwork</button>
+                            <button onClick="searchArtwork()">Search Artwork</button>
                         </form>
                         <h3 class="subtitle"><br />Search Artists</h3>
                         <nav>
@@ -90,10 +90,13 @@
                                 <li>Type of Art</li>
                                 <li>
                                     <form action="/action_page.php">
-                                        <select name="type of art">
+                                        <select id="tag" name="type of art">
                                             <option value="Select one">Select one</option>
-                                            <option value="Anime">Anime</option>
                                             <option value="Animals">Animals</option>
+                                            <option value="Anime">Anime</option>
+                                            <option value="Comics">Comics</option>
+                                            <option value="Lanscapes">Landscapes</option>
+                                            <option value="Logos">Logos</option>
                                         </select>
                                     </form>
                                 </li>
@@ -103,7 +106,7 @@
                                 <li>Price</li>
                                 <li>
                                     <form action="/action_page.php">
-                                        <select name="price">
+                                        <select id ="price" name="price">
                                             <option value="Select one">Select one</option>
                                             <option value="$">$</option>
                                             <option value="$$">$$</option>
@@ -117,12 +120,11 @@
                                 <li>Time</li>
                                 <li>
                                     <form action="/action_page.php">
-                                        <select name="time">
+                                        <select id="time" name="time">
                                             <option value="Select one">Select one</option>
                                             <option value="10">10 days</option>
                                             <option value="20">20 days</option>
-                                            <option value="20">30 days</option>
-                                            <option value="20">30+ days</option>
+                                            <option value="30">30+ days</option>
                                         </select>
                                     </form>
                                 </li>
@@ -131,7 +133,7 @@
                                 <li></li>
                                 <li>
                                     <form style="display: inline" action="artistResults.html" method="get">
-                                        <button>Search Artists</button>
+                                        <button onclick="searchArtist()">Search Artists</button>
                                     </form>
                                 </li>
                             </ul>

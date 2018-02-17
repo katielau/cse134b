@@ -49,7 +49,6 @@
             <div class="topnav" id="myTopnav">
                 <a href="home.html" class="active">Home</a>
                 <a href="faq.html">FAQ</a>
-                <a href="login.html">Login</a>
                 <p><a id="login" href="login.html">Login</a></p>
                 <p><a id="logout" onclick="logout()" href="home.html"></a></p>
                 <p><a id="msgTab" href="messaging.html"></a></p>
@@ -66,67 +65,69 @@
                     <h3>-How do I use this site?</h3>
                     <h4>Search for artists based on the type of art they do, general price range, or timeframe.<br /></h4>
                 </div>
-<div class="left-panel">
-    <div class="left-row1">
-        <h3 class="subtitle"><br />Search Artwork<br /></h3>
-        <input type="text" name="search" value="" />
-        <form style="display: inline" action="artworkResults.html" method="get">
-            <button>Search Artwork</button>
-        </form>
-        <h3 class="subtitle"><br />Search Artists</h3>
-        <nav>
-            <ul>
-                <li>Type of Art</li>
-                <li>
-                    <form action="/action_page.php">
-                        <select name="type of art">
-                            <option value="Select one">Select one</option>
-                            <option value="Anime">Anime</option>
-                            <option value="Animals">Animals</option>
-                        </select>
-                    </form>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li>Price</li>
-                <li>
-                    <form action="/action_page.php">
-                        <select name="price">
-                            <option value="Select one">Select one</option>
-                            <option value="$">$</option>
-                            <option value="$$">$$</option>
-                            <option value="$$$">$$$</option>
-                        </select>
-                    </form>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li>Time</li>
-                <li>
-                    <form action="/action_page.php">
-                        <select name="time">
-                            <option value="Select one">Select one</option>
-                            <option value="10">10 days</option>
-                            <option value="20">20 days</option>
-                            <option value="20">30 days</option>
-                            <option value="20">30+ days</option>
-                        </select>
-                    </form>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li>
-                    <form style="display: inline" action="artistResults.html" method="get">
-                        <button>Search Artists</button>
-                    </form>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
+                <div class="left-panel">
+                    <div class="left-row1">
+                        <h3 class="subtitle"><br />Search Artwork<br /></h3>
+                        <input id="artworkSearch" type="text" name="search" value="" />
+                        <form style="display: inline" action="artworkResults.html" method="get">
+                            <button onClick="searchArtwork()">Search Artwork</button>
+                        </form>
+                        <h3 class="subtitle"><br />Search Artists</h3>
+                        <nav>
+                            <ul>
+                                <li>Type of Art</li>
+                                <li>
+                                    <form action="/action_page.php">
+                                        <select id="tag" name="type of art">
+                                            <option value="Select one">Select one</option>
+                                            <option value="Animals">Animals</option>
+                                            <option value="Anime">Anime</option>
+                                            <option value="Comics">Comics</option>
+                                            <option value="Lanscapes">Landscapes</option>
+                                            <option value="Logos">Logos</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li>Price</li>
+                                <li>
+                                    <form action="/action_page.php">
+                                        <select id="price" name="price">
+                                            <option value="Select one">Select one</option>
+                                            <option value="$">$</option>
+                                            <option value="$$">$$</option>
+                                            <option value="$$$">$$$</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li>Time</li>
+                                <li>
+                                    <form action="/action_page.php">
+                                        <select id="time" name="time">
+                                            <option value="Select one">Select one</option>
+                                            <option value="10">10 days</option>
+                                            <option value="20">20 days</option>
+                                            <option value="30">30+ days</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li>
+                                    <form style="display: inline" action="artistResults.html" method="get">
+                                        <button onclick="searchArtist()">Search Artists</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
