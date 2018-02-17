@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ARTC | Edit Profile</title>
+  <meta name="description" content="Description of your site goes here">
+  <meta name="keywords" content="keyword1, keyword2, keyword3">
+  <link href="css/style2.css" rel="stylesheet" type="text/css">
+
+</head>
+<body onload="getDesc('descEdit'); getProfPic(); checkLogin()">
+<div class="main">
+<div class="page">
+<div class="header">
+<h1>ARTC</h1>
+</div>
+<div class="topnav" id="myTopnav">
+            <a href="home.html" class="active">Home</a>
+            <a href="faq.html">FAQ</a>
+            <p><a id="login" href="login.html">Login</a></p>
+            <p><a id="logout" onclick="logout()" href="home.html"></a></p>
+            <p><a id="msgTab" href="messaging.html"></a></p>
+
+
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="content">
+<div class="left-panel">
+<div class="left-panel-in">
+
+
+<h2 class="title">CatLover99</h2>
+ 
+<!--<img id= "profPic" src="images/profile.jpg" width="500" alt="Image preview...">-->
+<br><h3>Change profile photo:</h3><br>
+
+<input id= "uploadedProfPic" src="#" type="file" onchange="previewFile()" accept="image/x-png,image/gif,image/jpeg"><br>
+<figure id="p1"><img id="profPic" src="images/cat1.jpg" alt="Profile picture preview" width="500"></figure>
+
+<br>
+<br>
+<br>
+<br>
+<textarea id="descEdit" rows="4" cols="50">Hi, I draw mainly cats! Feel free to commission me at cheap prices!</textarea>
+<br>
+<!--<button type="button" onclick="changeDesc()">Save Description</button>-->
+<br>
+<br>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<h3 class="subtitle">Works</h3>
+<BR>
+
+
+
+<input id="input-file1" src="#" onchange="editFile()" type="file" accept="image/jpeg, image/png">
+<button type="button" onclick="deleteImage('p1')">Delete Photo</button>
+<figure id="p1"><img id="pic1" SRC="images/cat1.jpg" alt="pic1" width="200" height="200"></figure><br>
+
+<input id="input-file2" src="#" onchange="nonoo()" type="file" accept="image/jpeg, image/png">
+<button type="button" onclick="deleteImage('p2')">Delete Photo</button>
+<figure id="p2"><img id="pic2" SRC="images/cat2.jpg" alt="pic2" width="200" height="200"></figure><br>
+
+<input id="input-file3" src="#" onchange="hithere()" type="file" accept="image/jpeg, image/png">
+<button type="button" onclick="deleteImage('p3')">Delete Photo</button>
+<figure id="p3"><img id="pic3" SRC="images/dog1.jpg" alt="pic3" width="200" height="200"></figure><br>
+
+<!--<IMG id="pic4" SRC="images/landscape.jpg" alt="Sunset landscape" width="200" height="200" onclick="clickme('input-file4')">
+<IMG id="pic5" SRC="images/cat3.jpg" alt="Digital Cat" width="200" height="200" onclick="clickme('input-file5')">
+<IMG id="pic6" SRC="images/bridge.jpg" alt="Bridge" width="200" height="200" onclick="clickme('input-file6')">-->
+
+<br>
+
+<p>&nbsp;</p>
+<br>
+<br>
+<form action="artisteditpageconfirm.html" method="get">
+		<input type="submit" value="Save all changes" onclick="changeDesc()" />
+</form>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<script src="script2.js">
+</script>
+
+</body></html>

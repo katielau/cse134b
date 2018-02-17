@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ARTC | Review Submission Page</title>
+  <meta name="description" content="Description of your site goes here">
+  <meta name="keywords" content="keyword1, keyword2, keyword3">
+  <link href="css/style2.css" rel="stylesheet" type="text/css">
+  <style>
+	.center {
+		margin: auto;
+		padding: 10px;
+	}
+  </style>
+  </head>
+<body onload="checkLogin()">
+<div class="main">
+<div class="page">
+<div class="header">
+<h1>ARTC</h1>
+</div>
+<div class="topnav" id="myTopnav">
+            <a href="home.html" class="active">Home</a>
+            <a href="faq.html">FAQ</a>
+            <p><a id="login" href="login.html">Login</a></p>
+            <p><a id="logout" onclick="logout()" href="home.html"></a></p>
+            <p><a id="msgTab" href="messaging.html"></a></p>
+
+
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="content">
+
+
+<div class="center">
+	<H1><B>Commission Review</B></H1	>
+	<BR>
+	<IMG SRC="images/cat1.jpg" alt= "Sketch of raiart's Cat" width="300" height="300">
+	<BR>
+	<BR>Artist Name: CatLover99
+	<BR>Work Name: "Sketch of My Cat"
+	<BR>
+	<BR>Overall Rating:
+		<form action="/action_page.php">
+                    <select name="overall rating">
+                        <option value="Select one">Select one</option>
+                        <option value="5">5 (Highest)</option>
+                        <option value="4">4</option>
+						<option value="5">3</option>
+                        <option value="4">2</option>
+						<option value="5">1 (Lowest)</option>
+                    </select>
+        </form>
+	Price:
+		<form action="/action_page.php">
+	                    <select name="price rating">
+                        <option value="Select one">Select one</option>
+						<option value="5">3 (Expensive)</option>
+                        <option value="4">2</option>
+						<option value="5">1 (Inexpensive)</option>
+                    </select>
+	    </form>
+	Timeliness:
+		<form action="/action_page.php">
+	                    <select name="time rating">
+                        <option value="Select one">Select one</option>
+                        <option value="5">5 (Highest)</option>
+                        <option value="4">4</option>
+						<option value="5">3</option>
+                        <option value="4">2</option>
+						<option value="5">1 (Lowest)</option>
+                    </select>	
+		</form>
+	Work Quality:
+		<form action="/action_page.php">
+	                    <select name="quality rating">
+                        <option value="Select one">Select one</option>
+                        <option value="5">5 (Highest)</option>
+                        <option value="4">4</option>
+						<option value="5">3</option>
+                        <option value="4">2</option>
+						<option value="5">1 (Lowest)</option>
+                    </select>
+		</form>
+
+	Comments:
+	<BR>
+	<form action="reviewConfirm.html" method="get">
+				<textarea rows="4" cols="50"> </textarea>
+				<BR>
+				<BR>
+				<input type="submit" value="Submit Review" />
+	</form>
+
+</div>
+
+
+
+
+</div>
+
+</div>
+</div>
+<script src="script2.js">
+</script>
+</body></html>
+
+

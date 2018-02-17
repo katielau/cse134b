@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ARTC | Artist CatLover99</title>
+  <meta name="description" content="Description of your site goes here">
+  <meta name="keywords" content="keyword1, keyword2, keyword3">
+  <link href="css/style2.css" rel="stylesheet" type="text/css">
+	<style>
+		.list1{
+			margin: 17px;
+		}
+	</style>
+  </head>
+<body onload="getDesc('desc'); getProfPic(); editPageButton(); checkLogin()">
+<div class="main">
+<div class="page">
+<div class="header">
+<h1>ARTC</h1>
+</div>
+<div class="topnav" id="myTopnav">
+            <a href="home.html" class="active">Home</a>
+            <a href="faq.html">FAQ</a>
+            <p><a id="login" href="login.html">Login</a></p>
+            <p><a id="logout" onclick="logout()" href="home.html"></a></p>
+            <p><a id="msgTab" href="messaging.html"></a></p>
+
+
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="content">
+<div class="left-panel">
+<div class="left-panel-in">
+
+
+<h2 class="title">CatLover99</h2>
+<img id= "profPic" src="images/cat1.jpg" alt="CatLover99 profile photo" width="500"> 
+<br>
+<br>
+<p id="desc"<B>Hi, I draw mainly cats! Feel free to commission me at cheap prices!</B></p>
+<br>
+<br>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<h3 class="subtitle">Works</h3>
+<BR>
+<!--<a href="cat1.html">-->
+<figure id="p1">
+<img id="pic1" SRC="images/cat1.jpg" alt="pic1" width="200" height="200">
+</figure>
+<!--</a>-->
+<figure id="p2">
+<img id="pic2" SRC="images/cat2.jpg" alt="pic2" width="200" height="200">
+</figure>
+<figure id="p3">
+<img id="pic3" SRC="images/dog1.jpg" alt="pic3" width="200" height="200">
+</figure>
+<!--<IMG id="pic4" SRC="images/landscape.jpg" alt="Sunset landscape" width="200" height="200">
+<IMG id="pic5" SRC="images/cat3.jpg" alt="Digital Cat" width="200" height="200">
+<IMG id="pic6" SRC="images/bridge.jpg" alt="Bridge" width="200" height="200">-->
+
+
+<p>&nbsp;</p>
+<br>
+<br>
+<br>
+<figure id="b1">
+<form action="artisteditpage.html" method="get">
+	<input type="submit" value="Edit profile (CatLover99 only)" />
+</form>
+</figure>
+</div>
+</div>
+
+
+<div class="right-panel">
+<div class="right-row1">
+<h3 class="subtitle">Statistics</h3>
+<p>&nbsp;</p>
+<img src="images/right-bullet.jpg" alt="" height="8" width="17"><b>Most Popular Tags</b>
+<div class="list1">
+  <a href="animalHits.html">Animals</a>
+  <br><a href="#">Cute</a>
+  <br><a href="#">Cats</a>
+  <br><a href="#">Sketch</a>
+  <br><a href="#">Landscapes</a>
+</div>
+<p>&nbsp;</p>
+<img src="images/right-bullet.jpg" alt="" height="8" width="17"><b>Commissions Completed:6</b>
+<p>&nbsp;</p>
+<img src="images/right-bullet.jpg" alt="" height="8" width="17"><b>Average Overall Rating:</b><br><div class="list1">★★★★★</div>
+<p>&nbsp;</p>
+<img src="images/right-bullet.jpg" alt="" height="8" width="17"><b>Average Timeliness Rating:</b> <br><div class="list1">★★★★☆</div>
+<p>&nbsp;</p>
+<img src="images/right-bullet.jpg" alt="" height="8" width="17"><b>Average Work Quality Rating:</b><br><div class="list1">★★★★★</div>
+<p>&nbsp;</p>
+<img src="images/right-bullet.jpg" alt="" height="8" width="17"><b>Average Price Rating:</b><br><div class="list1">$</div>
+<p>&nbsp;</p>
+</div>
+
+
+<div class="right-row2">
+<h3 class="subtitle">Latest Commissions</h3>
+<p>&nbsp;</p>
+<img src="images/right-bullet.jpg" alt="" height="8" width="17"><b>January 27, 2018</b>
+<div class="list1">
+<a href = "bridge.html"><strong>Bridge</strong> </a> for <strong> oranges27 </strong>
+<br>A simple bridge sketch. Took me 2 days on this one!</div>
+<p>&nbsp;</p>
+<img src="images/right-bullet.jpg" alt="" height="8" width="17"><b>January 5, 2018</b>
+<div class="list1">
+<a href = "cat1.html"><strong>A Sketch of raiart's Cat</strong> </a> for <strong> raiart </strong>
+<br>Client asked me to draw her lovely kitty!</div>
+<p>&nbsp;</p>
+<img src="images/right-bullet.jpg" alt="" height="8" width="17"><b>December 31, 2018</b>
+<div class="list1">
+<a href = "dog.html"><strong>Doggo</strong> </a> for <strong> JeanBrook </strong>
+<br>I suppose dogs are quite alright too.</div>
+<p>&nbsp;</p>
+</div>
+
+<div class="right-row3">
+<h3 class="subtitle">Latest Reviews</h3>
+<p>&nbsp;</p>
+
+<img src="images/right-bullet.jpg" alt="" height="8" width="17">January 27, 2018
+<div class="list1">
+User: oranges27  
+<br>Overall Rating: ★★★★★ 
+<br>Timeliness: ★★★★★
+<br>Work Quality: ★★★★★  
+<br>Price: $ 
+<br>"Love it!" 
+</div>
+<p>&nbsp;</p>
+
+<img src="images/right-bullet.jpg" alt="" height="8" width="17">January 5, 2018
+<div class="list1">
+User: raiart  
+<br>Overall Rating: ★★★★★ 
+<br>Timeliness: ★★★★☆ 
+<br>Work Quality: ★★★★★  
+<br>Price: $ 
+<br>"CatLover99 is a great artist, highly recommended!" 
+</div>
+</div>
+
+
+<div class="right-row4">
+<h3 class="subtitle">Contact Info</h3>
+<p>&nbsp;</p>
+<p>E-mail: catlover99@gmail.com
+</p>
+<p>Fax: 626-000-0000
+</p>
+<p>Phone: 858-000-0000
+</p>
+<br>
+<figure id="b2">
+	<form action="messaging.html" method="get">
+		<input type="submit" value="Start a chat with me!" />
+	</form>
+</figure>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<script src="script2.js">
+</script>
+
+</body></html>
