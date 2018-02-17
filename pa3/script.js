@@ -68,7 +68,7 @@ function logout() {
 function msg() {
     if (localStorage.getItem("msgString") == null) {
         if (localStorage.getItem("logged") == 1) {
-            msgString = "<h3>CATLOVER99<h3/>" + document.getElementById("msgText").value + "<br \>";
+            msgString = "<h3>CATLOVER99</h3>" + document.getElementById("msgText").value + "<br \>";
             localStorage.setItem("msgString", msgString);
             document.getElementById("msgs").innerHTML = localStorage.getItem("msgString");
             document.getElementById("msgText").value = "";
