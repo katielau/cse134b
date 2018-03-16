@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router';
 import {browserHistory} from 'react-router';
 import '../../style1/styles.css';
+import styles from './msg.module.css';
 
 
 class msgPage extends React.Component {
@@ -21,6 +22,7 @@ class msgPage extends React.Component {
   }
  
   render() {
+    console.log(styles);
     return (
       <div className="main">
         <div className="page">
@@ -36,7 +38,7 @@ class msgPage extends React.Component {
           </div>
 
           <div className="content">
-            <div className="rright-panel">
+            <div className={styles.panel}>
               <h2>Messages</h2>
 
         <NewMsg items={this.state.items} />
@@ -113,7 +115,8 @@ class msgPage extends React.Component {
     }
     const newItem = {
       text: this.state.text,
-      id: this.props.state.currUser
+      uuu: this.props.state.currUser,
+      id: Date.now()
     };
     this.setState(prevState => ({
       items: prevState.items.concat(newItem),
@@ -127,7 +130,7 @@ class NewMsg extends React.Component {
     return (
       <ul>
         {this.props.items.map(item => (
-          <li key={item.id}><strong><u>{item.id}</u></strong><br/>{item.text}</li>
+          <li key={item.id}><strong><u>{item.uuu}</u></strong><br/>{item.text}</li>
         ))}
       </ul>
     );

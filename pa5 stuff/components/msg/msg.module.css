@@ -1,0 +1,10 @@
+.panel {
+    width: 623px;
+    float: right;
+    padding-top: 20px;
+    padding-right: 33px;
+}
+
+.panel li strong {
+    color:blue;
+}
